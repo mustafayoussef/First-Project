@@ -1,0 +1,661 @@
+/* 
+    =====================
+        Public Style
+    =====================
+*/
+* , *:after , *:before{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans',arial;
+    
+}
+.container{
+    width: 89%;
+    margin: auto;
+}
+.float1-marg{
+    float: left;
+    width: 23%;
+    margin-left: 1%;
+}
+.float2-marg{
+    float: left;
+    width: 30%;
+    margin-left: 3%;
+}
+.float3-marg{
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+.float4-marg{
+    width: 33.3333333%;
+    float: left;
+    text-align: left;
+}
+/* 
+    =====================
+        Navbar Style
+    =====================
+*/
+.navbar{
+    background-color: white;
+    width: 100%;
+    height:60px ;
+    overflow: hidden;
+    position: fixed;
+    z-index: 99999;
+}
+.navbar .logo img{
+    margin: 2% 0;
+    height: 36px;
+    width: 136px;
+}
+.navbar input {
+    display: none;
+}
+.navbar input , .navbar label{
+    position: fixed;
+    top: 15px;
+    right: 25px;
+}
+.navbar label{
+    display: block;
+    width: 9px;
+    height: 9px;
+    background: url('../images/nav/menu-button.png') no-repeat;
+    background-size: cover;
+    padding: 15px;
+    cursor: pointer;
+}
+.navbar input:checked ~ .links{
+    display: block;
+}
+.navbar input:checked ~ label{
+    background: url('../images/nav/close.png');
+    background-size: cover;
+}
+.navbar .links .ul-list{
+    float: right;
+    margin: 2% 0;
+    list-style: none;
+}
+.navbar .links .ul-list .list-item{
+    display: inline-block;
+}
+.navbar .links .ul-list .list-item a{
+    display: block;
+    text-decoration: none;
+    padding: 10px 13px;
+    font-size: 14px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.navbar .links .ul-list .list-item a:hover{
+    color:#4caf50;
+}
+.navbar .links .ul-list .list-item button{
+    color:white;
+    font-weight: bold;
+    width: 107px;
+    height: 41px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: none;
+    background: white;
+    border-radius: 2px;
+    letter-spacing: 1px;
+    background: #4caf50;
+    cursor: pointer;
+}
+.navbar .links .ul-list .list-item button:hover{
+    opacity: .8;
+}
+/* 
+    ************************
+     Media For Navbar Style
+    ************************
+*/
+@media screen and (min-width:1205px){
+    .navbar label{
+        display: none;
+    }
+}
+@media screen and (max-width:1204px){
+    .navbar .logo{
+        float: none;
+        width: 100%;
+    }
+    .navbar .links{
+        float: none;
+        width: 100%; 
+        display: none;
+        /* margin-top: 3%; */
+    }
+    .navbar .links .ul-list .list-item{
+        display: block;
+        text-align: center;
+    }
+}
+/* 
+    =====================
+        Home Style
+    =====================
+*/
+.home{
+    height: 900px;
+    width: 100%;
+    background: url('../images/business-2.jpg');
+    background-size:cover;
+    text-align: center;
+    position: relative;
+}
+/* .home .back{
+    height: 900px;
+    width: 100%; 
+    position: absolute;
+    opacity: .5;
+}*/
+.home .home-information{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+}
+.home .home-information p{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 32px;
+}
+.home .home-information h1{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 25px;
+    padding: 0 62px;
+}
+.home .home-information button{
+    background: #4caf50;
+    color: white;
+    margin: 45px 0 12px;
+    padding: 15px 28px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 13px;
+    border: #4caf50 solid 2px;
+}
+.home .home-information button:hover{
+    background: white;
+    color: black;
+}
+/* 
+    =====================
+        Work Style
+    =====================
+*/
+.work{
+    text-align: left;
+    overflow: hidden;
+}
+.work .part1 , .work .part2 , .work .part3{
+    margin: 9% 0 0 0;
+    padding: 0 15px;
+}
+.work .part1 .content1 ,.work .part2 .content2 ,.work .part3 .content3{
+    padding: 0 10px 0 50px ;
+}
+.work i{
+    float: left;
+    color: #4caf50;
+    font-size: 30px;
+    padding-right: 10px;
+}
+.work h5{
+    font-size: 18px;
+    margin-bottom: 11px;
+    color: #303030;
+}
+.work p{
+    font-size: 16px;
+    color: #888;
+    line-height: 1.86em;
+}
+/* 
+    =====================
+        Services Style
+    =====================
+*/
+.our-services{
+    overflow: hidden;
+    margin-top: 9%;
+    padding-bottom: 9%;
+    background: #f8f8f8;
+}
+.our-services .services-content{
+    text-align: center;
+    margin: 30px 0 50px 0;
+    overflow: hidden;
+}
+.our-services .services-content h3{
+    font-size: 35px;
+    color: #303030;
+    line-height: 1.38em;
+    font-family: inherit;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+.our-services .services-content p{
+    margin: 17px 250px 0;
+    font-size: 20px;
+    color: #888888;
+}
+.pp{
+    padding: 0 15px;
+}
+.our-services .services-parts img{
+    width: 100%;
+}
+.our-services .services-parts .ser-cont2 {
+    background: #fff;
+    margin-top:0;
+    padding:22px;  
+}
+.our-services .services-parts h6{
+    font-size: 19px;
+    color: #303030;
+    margin-bottom: 8px;
+}
+.our-services .services-parts p{
+    font-size: 16px;
+    color: #888888;
+    margin-bottom: 8px;
+    line-height: 1.86em;
+}
+.our-services .services-parts .learn-more{
+    font-size: 15px;
+    text-decoration: none;
+    color: #666;
+}
+.our-services .services-parts .arrow{
+    margin: 0 7px 0 0 ;
+    padding: 10px 0 0 0 ;
+    color: #666;
+}
+/* 
+    =====================
+        Secret Style
+    =====================
+*/
+.our-secret{
+    background: white;
+    overflow: hidden;
+}
+.our-secret .secret-total{
+    overflow: hidden;
+}
+.our-secret .sec-cont {
+    text-align: left;
+    padding-top: 150px;
+}
+.our-secret .sec-cont h1{
+    font-size: 30px;
+    color: #303030;
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    font-weight: bold;
+}
+.our-secret .secret-total .sec-cont p{
+    font-size: 15px;
+    line-height: 1.86em;
+    color: #686868;
+    margin-bottom: 30px;
+}
+.our-secret .image img{
+    height: 100%;
+    width: 100%;
+    padding: 90px 50px ;
+}
+.our-secret .secrect-content .list-items{
+    list-style: none;
+}
+.our-secret .secret-total .sec-cont .list{
+    margin-bottom: 30px;
+}
+.our-secret .secret-total .sec-cont .ul-list{
+    margin-bottom: 15px;
+}
+.our-secret .secret-total .sec-cont .ul-list li{
+    margin-bottom: 8px;
+    line-height: 2em;
+    color: #686868;
+}
+.our-secret .secret-total .sec-cont .ul-list li i{
+    margin-right: 15px;
+    color:#4caf50;
+}
+.our-secret .secret-total .sec-cont button{
+    background: #4caf50;
+    color: white;
+    border: none;
+    margin: 45px 0 12px;
+    padding: 15px 28px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* 
+    =====================
+        Chat Style
+    =====================
+*/
+.chat{
+    background: #f8f8f8;
+    padding-top: 9%;
+    text-align: center;
+    overflow: hidden;
+}
+.chat .font-awesome{
+    font-size: 2em;
+    color: #4caf50;
+}
+.chat .chat-parts {
+    padding-top: 5%;
+    overflow: hidden;
+}
+.chat .chat-parts .ch-content{
+    background: white;
+    margin-right: 3%;
+    padding: 5% 6% ;
+    border-radius: 2%;
+}
+.chat .chat-parts .ch-content p{
+    text-align: left;
+    line-height: 1.86em;
+    font-size: 16px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    color: #686868;
+}
+.chat .chat-parts .ch-information{
+    margin: 20px 0 0 0 ;
+    padding-left: 25px ;
+    text-align: left;
+}
+.chat .chat-parts .ch-information h6{
+    font-size: 15px;
+    color: #686868;
+}
+.chat .chat-parts .ch-information p{
+    margin: 2px 0 8px;
+    font-size: 15px;
+    color: #686868;
+}
+.chat .font-awesome-arrow{
+    font-size: 2em;
+    color: rgba(0,0,0,.2);
+    padding:  5% 0  ;
+    cursor: pointer;
+}
+.chat .font-awesome-arrow .letf-arrow:hover , .chat .font-awesome-arrow .right-arrow:hover{
+    border-radius: 50%;
+    color: #4caf50;
+}
+/* 
+    =====================
+        Statistics Style
+    =====================
+*/
+.statistics{
+    background: white;
+    text-align: center;
+    padding-bottom: 9%;
+}
+.statistics .stat-parts{
+    padding: 10% 5% 10% ;
+}
+.statistics .stat-parts i{
+    margin-bottom: 10%;
+    color: rgba(0,0,0,.4);
+    font-size: 34px;
+    line-height: 36px;
+}
+.statistics .stat-parts h3{
+    margin-bottom: 10%;
+    color: rgba(0,0,0,.75);
+    font-size: 52px;
+    line-height: 1em;
+}
+.statistics .stat-parts h5{
+    margin-bottom: 10%;
+    color: rgba(0,0,0,.55);
+    font-size: 20px;
+}
+/* 
+    =====================
+      additional Style
+    =====================
+*/
+.additional-value{
+    background: url('../images/download.jpg');
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    height: 550px;
+    width: 100%;
+}
+.additional-value .add-information{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% , 50%);
+    width: 57%;
+}
+.additional-value .add-information h2{
+    color: white;
+    font-size: 32px;
+    margin-top: -30%;
+    margin-bottom: 10%;
+}
+.additional-value .add-information p{
+    color: rgba(255,255,255,.92);
+    font-size: 20px;
+    line-height: 1.86em;
+    padding-bottom: .5%;
+}
+.additional-value .add-information button{
+    background: #4caf50;
+    color: white;
+    margin: 45px 0 12px;
+    padding: 15px 28px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 2px;
+    cursor: pointer;
+}
+/* 
+    =====================
+    Other Services Style
+    =====================
+*/
+.other-services{
+    margin: 9% 0;
+    text-align: center;
+    overflow: hidden;
+}
+/*   *******
+     header
+     ******* */
+.other-services .oth-ser-header{
+    margin: 10px 0 60px;
+}
+.other-services .oth-ser-header h3{
+    font-size: 35px;
+    color: #303030;
+}
+.other-services .oth-ser-header p{
+    margin: 17px 250px 0;
+    font-size: 21px;
+    color: #888;
+}
+/*   *******
+     content
+     ******* */
+.other-services .oth-ser-content h5{
+    margin-bottom: 18px;
+    text-align: left;
+    color: #303030;
+    line-height: 1.38em;
+    font-size: 18px;
+}
+.other-services .oth-ser-content p{
+    margin-bottom: 18px;
+    text-align: left;
+    color: #686868;
+    line-height: 1.86em;
+    font-size: 15px;
+}
+/* 
+    =====================
+        brands Style
+    =====================
+*/
+.brands{
+    background: #f8f8f8;
+    overflow: hidden;
+    text-align: center;
+    padding: 7% 0;
+}
+.brands .images .iamge{
+    width: 18%;
+    float: left;
+    padding-left: 2%;
+}
+.brands .images .iamge img{
+    width: 170px ;
+}
+/* 
+    =====================
+        Feeling Style
+    =====================
+*/
+.felling-convinced{
+    background: #4caf50;
+    overflow: hidden;
+    padding: 5% 0;
+    color: white;
+}
+.felling-convinced .feel-content h4{
+    font-size: 35px;
+    line-height: 1.5em;
+}
+.felling-convinced .feel-content p{
+    color: rgba(255,255,255,.82);
+    font-size: 20px
+}
+.felling-convinced .feel-btn{
+    float: right;
+    padding: 0 14px;
+}
+.felling-convinced .feel-btn button{
+    background: white;
+    color: black;
+    margin: 13px 0 0 0 x;
+    padding: 20px 28px;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    letter-spacing: .2px;
+}
+/* 
+    =====================
+        About Style
+    =====================
+*/
+.about{
+    background: #1f2021;
+    overflow: hidden;
+    padding: 5% 0 ;
+    text-align: left;
+}
+.about .about-parts h4{
+    color: white;
+    font-size: 17px;
+    margin-bottom: 7%;
+}
+.about .about-parts span , .about .about-parts p , .about .about-parts .item-list , .about .about-parts .about-part4 .contact-details{
+    color: #58606b;
+    list-style: none;
+    font-size: 14px;
+    line-height: 1.86em;   
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+.about .about-parts .about-part4{
+    float: right;
+}
+.about .about-parts .about-part4 .contact-details img{
+    background-size: cover;
+    opacity: .11;
+    position: absolute;
+}
+.about .about-parts .about-part1 , .about-part2 , .about-part3 ,.about-part4 {
+    width: 22%;
+    margin: 0;
+    padding: 0 14.5px;
+}
+.about .about-parts  i ,.about .about-parts i {
+    margin-right: 3%;
+    color: rgba(255,255,255,.34);
+    font-size: 15px;
+}
+.about .map ,.about .phone ,.about .email{
+    margin-bottom: 3%;
+} 
+/* 
+    =====================
+        Footer Style
+    =====================
+*/
+.footer{
+    background: #191919;
+    padding: 1%;
+    color: #797979;
+    overflow: hidden;
+    font-size: 14px;
+
+}
+.footer .copyright{
+    padding-top: 1%;
+}
+.footer .social{
+    float: right;
+    padding-top: 1%;
+    text-align: right;
+    width: 50%;
+}
+.footer .social a{
+    margin-right: 2%;
+    color: #535353;
+}
+.footer .social .facebook:hover{
+    color: #0275d8;
+}
+.footer .social .google:hover{
+    color: rgb(223, 24, 24);
+}
+.footer .social .linked:hover ,.footer .social .twitter:hover{
+    color: rgb(61, 118, 224);
+}
